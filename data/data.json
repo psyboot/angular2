@@ -1,0 +1,15 @@
+[
+{
+    "name": "Николай",
+    "lastname": "Иванов",
+    "number": "1234",
+    "sea": false
+},
+
+{
+    "name": "Анна",
+    "lastname": "Зайцева",
+    "number": "54321",
+    "sea": true
+}
+]
