@@ -9,9 +9,9 @@ myApp.controller('todoCtrl', function ($scope,$http) {
     $http.get("data/data.json").success(function(data) {
         $scope.boats = data;
     });
-    $scope.Save = function () {
-        console.log($scope.boats);
-        $http.post("data/data.json", $scope.boats).success(function(data) {console.log(data);});
+    $scope.Save = function (nboats) {
+        console.log(nboats);
+        $http.post("data/data.json", nboats).success(function(data) {console.log(data);});
     }
     console.log($scope.todos);
 });
