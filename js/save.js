@@ -9,7 +9,7 @@ myApp.controller("saveController", function($scope,$http,localStorageService) {
         //localStorageService.set("model1", $scope.model1);
         console.log("boats not exists");
         $http.get("data/data.json").success(function(data) {
-        $scope.boats = data;
+            $scope.boats = data;
         //console.log(data);
         });        
         console.log(localStorageService.set("boats",$scope.data));        
@@ -18,7 +18,10 @@ myApp.controller("saveController", function($scope,$http,localStorageService) {
     $scope.boats= localStorageService.get("boats");
 
     $scope.Save = function (nboats) {        
-        //localStorageService.set("boats",nboats);
+        for(var key in nboats) {
+            
+        }
+        localStorageService.set("boats",nboats);
         console.log("Nboats:" + nboats[0]["sea"]);
     }
 
