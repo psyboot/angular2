@@ -10,9 +10,15 @@
     <title>Angular app</title>
 </head>
 <body>
-<div class="container">
-<div class="row" ng-controller="saveController">    
-<div class="span12">
+<div class="container" ng-controller="saveController">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+    <div class="col-md-3 text-center" style="background-color: lightblue;"><h3>В море</h3><h3>{{insea}}</h3></div>
+    <div class="col-md-3 text-center" style="background-color: lightgreen"><h3>В порту</h3><h3>{{inport}}</h3></div>
+</div>
+</div>
+<div class="row"> 
+<div class="col-md-12">
     <table class="table table-striped">
     <thead>
         <tr >

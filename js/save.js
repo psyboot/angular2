@@ -12,20 +12,40 @@ myApp.controller("saveController", function($scope,$http,localStorageService) {
         $scope.boats = data;
         //console.log(data);
         });        
-        console.log(localStorageService.set("boats",$scope.data));        
+            console.log(localStorageService.set("boats",$scope.data));        
     }
     
     $scope.boats= localStorageService.get("boats");
-
-    $scope.Save = function (nboats) {        
-        //localStorageService.set("boats",nboats);
-        console.log("Nboats:" + nboats[0]["sea"]);
+    $scope.inport = 0;
+    $scope.insea = 0;
+    for (var i in $scope.boats) {        
+        if ($scope.boats[i]["sea"]){
+            $scope.insea ++;
+        } else {
+            $scope.inport ++;
+        }
     }
+
+    $scope.Save = function (nboats) {  
+    var boats = {};
+    $scope.inport = 0;
+    $scope.insea = 0;
+    for (i in nboats) {
+            boats[i] = nboats[i];
+        };      
+        localStorageService.set("boats",boats); 
+        for (var i in $scope.boats) {        
+        if ($scope.boats[i]["sea"]){
+            $scope.insea ++;
+        } else {
+            $scope.inport ++;
+        }
+        }       
+      }
 
     $scope.RemoveAll = function (nboats) {        
         localStorageService.clearAll();
     }
-
     //$scope.boats_jsonstring=JSON.stringify($scope.model);
     
 });
