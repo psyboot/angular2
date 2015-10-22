@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Sigh in</h3>
+<div class="row">
+<div class="col-md-3">
+<form class="form" action="" method="post" name="login">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+    <label for="userlogin">Please enter your login:</label>
+    {{ form.userlogin(class="form-control") }}           
+    {{ form.remember_me(class="checkbox") }}Remember me
+    </div>
+    <div class="form-group">
+   	<input type="submit" class="btn btn-default" value="Sighn in">
+    </div>    
+</form>
+</div></div>
+{% endblock %}

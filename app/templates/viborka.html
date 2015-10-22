@@ -1,0 +1,38 @@
+           {% extends "base.html" %}
+            {% block content %}            		
+		            <div class="row" style = "background-color: #bbbbbb">
+		            <div class="col-lg4 col-lg-offset-5"><h3>Вбито анкет</h3></div>
+		            {% for key in data.keys() %}		            		            
+		            <div class="col-lg-8" >
+			            <table class="table table-bordered table-hover table-striped" style = "background-color: #ffffff">
+			            <caption>{{ key }}</caption>
+			            	<thead>
+			            	<tr>
+			            		<th>Возраст</th>	
+			            		<th>Количество</th>
+			            		<th>Нужно</th>
+			            		<th width = "25%">Разница (минус - требуется,плюс - лишние)</th>
+			            	</tr>
+			            	</thead>
+			            	<tbody>			            	
+			            	
+			            	{% for d in data[key] %}
+			            		<tr>
+			            			<td align="center">{{ d[0] }}</td>	
+			            			<td align="center">{{ d[1] }}</td>		            					            		
+			            			<td align="center">{{ d[2] }}</td>
+			            			{% if d[1]-d[2]<0 %}
+			            			<td class="alert alert-danger" align="center">{{ d[1]-d[2] }}</td>   		
+			            			{% elif d[1]-d[2]>0 %}
+			            			<td class="alert alert-info" align="center">{{ d[1]-d[2] }}</td>
+			            			{% else %}
+			            			<td class="alert alert-success" align="center">{{ d[1]-d[2] }}</td>
+			            			{% endif %}
+			            		</tr>
+			            	{% endfor %}
+			            	</tbody>
+			            </table>			           
+			           </div>
+			           {% endfor %}	
+			          </div>	            
+            {% endblock %}
