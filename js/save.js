@@ -9,13 +9,14 @@ myApp.controller("saveController", function($scope,$http,localStorageService) {
         //localStorageService.set("model1", $scope.model1);
         console.log("boats not exists");
         $http.get("data/data.json").success(function(data) {
-        $scope.boats = data;
+            $scope.boats = data;
         //console.log(data);
         });        
             console.log(localStorageService.set("boats",$scope.data));        
     }
     
     $scope.boats= localStorageService.get("boats");
+
     $scope.inport = 0;
     $scope.insea = 0;
     for (var i in $scope.boats) {        
