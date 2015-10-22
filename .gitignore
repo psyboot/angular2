@@ -2,4 +2,6 @@
 fonts/glyphicons-halflings-regular.eot
 *.svg
 fonts/glyphicons-halflings-regular.ttf
-*.woff/angular/
+*.woff
+/angular/
+.gitignore
