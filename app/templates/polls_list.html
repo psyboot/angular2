@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="row" align="center">
+<h3> Опросы </h3>
+   <div class="col-md-8">
+   <table class="table table-bordered table-hover table-striped" style = "background-color: #ffffff">
+                        <caption>{{ key }}</caption>
+                            <thead>
+                            <tr>
+                                <th>Опрос</th>    
+                                <th>Правка анкеты</th>                                
+                            </tr>
+                            </thead>
+                            <tbody>                         
+                            
+                            {% for d in data[key] %}
+                                <tr>
+                                    <td align="center">{{ d[0] }}</td>
+                                    <td align="center">{{ d[1] }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>        
+    </div>
+
+</div>
+ 
+
+{% endblock %}

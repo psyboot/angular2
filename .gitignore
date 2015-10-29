@@ -5,3 +5,5 @@ fonts/glyphicons-halflings-regular.ttf
 *.woff
 /angular/
 .gitignore
+=======
+.flaskpoll/

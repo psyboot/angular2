@@ -8,26 +8,10 @@
 	"buffers":
 	[
 		{
-			"file": "js/save.js",
+			"file": "/home/talov/Загрузки/git_tutorial/work/hello/hello.htm",
 			"settings":
 			{
-				"buffer_size": 1021,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/anya/install/otto-getting-started/app.rb",
-			"settings":
-			{
-				"buffer_size": 307,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/anya/install/otto-getting-started/config.ru",
-			"settings":
-			{
-				"buffer_size": 42,
+				"buffer_size": 74,
 				"line_ending": "Unix"
 			}
 		}
@@ -39,17 +23,17 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "pro",
+		"height": 117.0,
+		"last_filter": "insta",
 		"selected_items":
 		[
 			[
-				"pro",
-				"Project: Add Folder"
-			],
-			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"pro",
+				"Project: Add Folder"
 			],
 			[
 				"rem",
@@ -68,7 +52,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 557.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -89,11 +73,15 @@
 	},
 	"expanded_folders":
 	[
-		"/home/anya/projects/angular2",
-		"/home/anya/projects/angular2/js"
+		"/home/talov/projects/angular2"
 	],
 	"file_history":
 	[
+		"/home/talov/projects/angular2/.gitignore",
+		"/home/talov/.bashrc",
+		"/home/talov/projects/angular2/js/save.js",
+		"/home/anya/install/otto-getting-started/app.rb",
+		"/home/anya/install/otto-getting-started/config.ru",
 		"/home/anya/projects/angular/index.html",
 		"/home/anya/.ssh/id_rsa.pub",
 		"/home/anya/projects/angular/js/npm.js",
@@ -102,7 +90,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -133,87 +121,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/save.js",
+					"file": "/home/talov/Загрузки/git_tutorial/work/hello/hello.htm",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1021,
+						"buffer_size": 74,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								437,
-								437
+								51,
+								51
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 69.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/anya/install/otto-getting-started/app.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 307,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/anya/install/otto-getting-started/config.ru",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 42,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -227,7 +157,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -264,7 +194,7 @@
 	"project": "ang2.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
