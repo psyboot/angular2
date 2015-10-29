@@ -7,7 +7,7 @@
     {{ form.hidden_tag() }}
     <div class="form-group">
     <label for="userlogin">Please enter your login:</label>
-    {{ form.name(class="form-control") }}
+    {{ form.name(class="form-control",value=form["name"]) }}
     {{ form.lastname(class="form-control") }} 
     {{ form.number(class="form-control") }}
     {{ form.sea(class="checkbox") }}В море
