@@ -1,19 +1,19 @@
 [
 {
-    "name": "Николай",
-    "lastname": "Иванов",
+    "name": "РќРёРєРѕР»Р°Р№",
+    "lastname": "РРІР°РЅРѕРІ",
     "number": "1234",
     "sea": false
 },
 {
-    "name": "Анна",
-    "lastname": "Зайцева",
+    "name": "РђРЅРЅР°",
+    "lastname": "Р—Р°Р№С†РµРІР°",
     "number": "54321",
     "sea": true
 },
 {
-    "name": "Петр",
-    "lastname": "Сидоров",
+    "name": "РџРµС‚СЂ",
+    "lastname": "РЎРёРґРѕСЂРѕРІ",
     "number": "153215",
     "sea": true
 }

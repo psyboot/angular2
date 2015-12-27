@@ -13,5 +13,6 @@ class EditForm(Form):
     lastname = StringField('lastname', validators=[DataRequired()])
     number = StringField('number', validators=[DataRequired()])
     sea = BooleanField('sea', default=False)
+    remember_me = BooleanField('remember_me', default=False)
 
 
